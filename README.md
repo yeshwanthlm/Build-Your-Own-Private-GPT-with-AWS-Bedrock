@@ -257,7 +257,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 👨‍💻 Author
 
-**Yeshwanth Lakkireddy**
+**Yeshwanth L M**
 - GitHub: [@yeshwanthlm](https://github.com/yeshwanthlm)
 - LinkedIn: [Yeshwanth L M](https://www.linkedin.com/in/yeshwanth-l-m/)
 
