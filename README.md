@@ -11,7 +11,7 @@ A serverless AI chat application that allows users to interact with an AWS Bedro
 
 ## 🏗️ Architecture
 
-<img width="1920" height="1080" alt="Build Your Own Private GPT with AWS Bedrock" src="https://github.com/user-attachments/assets/7ee68ed7-d9f1-4069-ad83-6438afe94cd4" />
+<img width="1920" height="1080" alt="Build Your Own Private GPT with AWS Bedrock" src="https://github.com/user-attachments/assets/0e118c5b-42fe-41bd-a5b8-78ca26619287" />
 
 **Components:**
 - **Frontend**: HTML/CSS/JavaScript chat interface hosted on S3 + CloudFront
