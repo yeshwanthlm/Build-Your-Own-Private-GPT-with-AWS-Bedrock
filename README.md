@@ -273,7 +273,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 **Yeshwanth Lakkireddy**
 - GitHub: [@yeshwanthlm](https://github.com/yeshwanthlm)
-- LinkedIn: [Yeshwanth Lakkireddy](https://www.linkedin.com/in/yeshwanthlm/)
+- LinkedIn: [Yeshwanth L M](https://www.linkedin.com/in/yeshwanth-l-m/)
 
 ## ⭐ Show Your Support
 
