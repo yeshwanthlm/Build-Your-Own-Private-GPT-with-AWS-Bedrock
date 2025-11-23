@@ -20,17 +20,35 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 
-# Step 3: Get API endpoint
+# Step 3: Get API endpoint and update frontend
+echo ""
+echo "🔧 Configuring frontend with API endpoint..."
+API_URL=$(terraform output -raw api_url)
+cd ..
+
+# Update app.js with the actual API endpoint
+sed -i.bak "s|const API_ENDPOINT = '.*';|const API_ENDPOINT = '$API_URL';|" frontend/app.js
+rm -f frontend/app.js.bak
+
+# Upload frontend to S3
+echo ""
+echo "📤 Uploading frontend to S3..."
+cd terraform
+S3_BUCKET=$(terraform output -raw s3_bucket_name)
+cd ..
+aws s3 sync frontend/ s3://$S3_BUCKET/ --exclude "*.bak"
+
+# Get CloudFront URL
+cd terraform
+CLOUDFRONT_URL=$(terraform output -raw cloudfront_url)
+cd ..
+
 echo ""
 echo "✅ Deployment complete!"
 echo ""
-API_URL=$(terraform output -raw api_url)
+echo "🌐 Your application is live at:"
+echo "   $CLOUDFRONT_URL"
+echo ""
 echo "📍 API Endpoint: $API_URL"
 echo ""
-echo "⚠️  Next steps:"
-echo "1. Update frontend/app.js with your API endpoint:"
-echo "   const API_ENDPOINT = '$API_URL';"
-echo ""
-echo "2. Open frontend/index.html in your browser to use the chat interface"
-echo ""
-echo "3. Make sure your AWS credentials have permissions to access Bedrock Knowledge Base"
+echo "⚠️  Note: CloudFront distribution may take 10-15 minutes to fully propagate globally"

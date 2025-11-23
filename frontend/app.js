@@ -1,6 +1,6 @@
 // Replace this with your API Gateway endpoint after deployment
 // You'll get this URL from Terraform output after running: terraform output api_url
-const API_ENDPOINT = 'YOUR_API_GATEWAY_URL_HERE';
+const API_ENDPOINT = 'https://zh32vlog41.execute-api.us-east-1.amazonaws.com/prod/query';
 
 function addMessage(content, type = 'assistant', citations = null) {
     const messagesDiv = document.getElementById('chatMessages');

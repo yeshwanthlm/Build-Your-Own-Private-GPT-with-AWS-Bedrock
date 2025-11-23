@@ -13,7 +13,7 @@ variable "project_name" {
 variable "knowledge_base_id" {
   description = "AWS Bedrock Knowledge Base ID"
   type        = string
-  default     = "YOUR_KNOWLEDGE_BASE_ID"  # Replace with your actual Knowledge Base ID
+  default     = "8MXJ065B7G"  # Replace with your actual Knowledge Base ID
 }
 
 variable "bedrock_model_id" {
