@@ -2,7 +2,12 @@
 
 A serverless AI chat application that allows users to interact with an AWS Bedrock Knowledge Base. This example demonstrates how to build a private GPT-style chatbot for the AWS Certified Solutions Architect - Professional (SAP-C02) exam preparation, but can be adapted for any knowledge base content.
 
-![Architecture Diagram](https://img.shields.io/badge/AWS-Bedrock-orange) ![Terraform](https://img.shields.io/badge/IaC-Terraform-purple) ![License](https://img.shields.io/badge/license-MIT-green)
+[![AWS](https://img.shields.io/badge/AWS-Bedrock-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/bedrock/)
+[![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+> 🚀 Build your own AI-powered chatbot with AWS Bedrock, Lambda, and CloudFront in minutes!
 
 ## 🏗️ Architecture
 
